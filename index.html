@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Gerador de Senhas</title>
+        <script src="gerador.js"></script>
+    </head>
+    <body>
+
+        <p>Tamanho?</p>
+        <input id="tamanho" type="text">
+
+        <p>Letras maiusculas?</p>
+        <input type="radio" name="maiuscula" value="true" checked> Sim<br>
+        <input type="radio" name="maiuscula" value="false"> Não<br>
+
+        <p>Números?</p>
+        <input type="radio" name="numero" value="true" checked> Sim<br>
+        <input type="radio" name="numero" value="false"> Não<br>
+
+        <p>Simbolos?</p>
+        <input type="radio" name="simbolo" value="true" checked> Sim<br>
+        <input type="radio" name="simbolo" value="false"> Não<br><br>
+        
+        <button id="btn">Gerar</button>
+        
+        <p><br></p>
+
+        <div id="senha_gerada">Senha: </div>        
+
+    </body>
+</html>
