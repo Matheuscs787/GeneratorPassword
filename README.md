@@ -30,7 +30,8 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 Para instalar o <GeneratorPassword>, siga estas etapas:
 
 Opera GX:
-    * Baixe o projeto na sua máquina, abra o gerenciador de extensões, ative o Modo de desenvolvedor, clique em carregar sem compactação e escolha a pasta do projeto.
+
+* Baixe o projeto na sua máquina, abra o gerenciador de extensões, ative o Modo de desenvolvedor, clique em carregar sem compactação e escolha a pasta do projeto.
 
 ## ☕ Usando <GeneratorPassword>
 
@@ -77,4 +78,4 @@ Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contr
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
-[⬆ Voltar ao topo](#nome-do-projeto)<br>
+[⬆ Voltar ao topo](#GeneratorPassword)<br>
