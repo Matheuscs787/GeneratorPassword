@@ -35,32 +35,113 @@ document.addEventListener('DOMContentLoaded', function(){
     function gerar(tamanho, e_maiuscula, e_numero, e_simbolo){
         
         const lowerchars = [97, 122];
-       
-        //if(e_maiuscula === true){
-            const upperchars = [65, 90];
-        //}
-        //if(e_numero === true){
-            const numbers = [48, 57];
-        //}
-        //if(e_simbolo === true){
-            const especialchars = [33, 35, 36, 37, 38, 40, 41, 42, 45, 46, 47, 63, 64, 91, 93, 94, 95, 123, 124, 125, 126];
-        //}
-
-        const ascii = [numbers, upperchars, lowerchars, especialchars];
+        const upperchars = [65, 90];
+        const numbers = [48, 57];
+        const especialchars = [33, 35, 36, 37, 38, 40, 41, 42, 45, 46, 47, 63, 64, 91, 93, 94, 95, 123, 124, 125, 126];
 
         let senha='';
         
-        for(let i=0; i<tamanho; i++){
+        if(tamanho<=20 && tamanho>0){
+            if(e_maiuscula === 'true'){ //letras minusculas e maiusculas
+                const ascii = [lowerchars, upperchars];
+                if(e_numero === 'true'){ //letras minusculas, maiusculas e numeros
+                    const ascii = [lowerchars, upperchars,  numbers];
+                    if(e_simbolo === 'true'){ //letras minusculas, maiusculas, numeros e simbolos
+                        const ascii = [lowerchars, upperchars, numbers, especialchars];
+                        for(let i=0; i<tamanho; i++){
+                            let type = parseInt(Math.random() * ascii.length);
+                            
+                            if(type === 3){
+                                senha += String.fromCharCode(especialchars[parseInt(Math.random() * especialchars.length)]);
+                            }else{
+                                senha += String.fromCharCode(Math.floor(Math.random() * (ascii[type][1] - ascii[type][0])) + ascii[type][0]);
+                            }
+                        }
+                    }else{ //letras minusculas, maiusculas e numeros
+                        const ascii = [lowerchars, upperchars, numbers];
+                        for(let i=0; i<tamanho; i++){
+                        
+                            let type = parseInt(Math.random() * ascii.length);
+                            
+                            senha += String.fromCharCode(Math.floor(Math.random() * (ascii[type][1] - ascii[type][0])) + ascii[type][0]);
+                        }    
+                    }
+                }else{ //letras minusculas, maiusculas
+                    if(e_simbolo==='true'){ // letras minusculas, maiusculas e simbolos
+                        const ascii = [lowerchars, upperchars, especialchars];
+                        for(let i=0; i<tamanho; i++){
+                            let type = parseInt(Math.random() * ascii.length);
 
-            let type = parseInt(Math.random() * ascii.length);
-            
-            if(type === 3){
-                senha += String.fromCharCode(especialchars[parseInt(Math.random() * especialchars.length)]);
-            }else{
-                senha += String.fromCharCode(Math.floor(Math.random() * (ascii[type][1] - ascii[type][0])) + ascii[type][0]);
+                            if(type === 2){
+                                senha += String.fromCharCode(especialchars[parseInt(Math.random() * especialchars.length)]);
+                            }else{
+                                senha += String.fromCharCode(Math.floor(Math.random() * (ascii[type][1] - ascii[type][0])) + ascii[type][0]);
+                            }
+                        }
+                    }else{ //letras minusculas e maiusculas
+                        const ascii = [lowerchars, upperchars];
+                        for(let i=0; i<tamanho; i++){
+                            let type = parseInt(Math.random() * ascii.length);
+                            senha += String.fromCharCode(Math.floor(Math.random() * (ascii[type][1] - ascii[type][0])) + ascii[type][0]);
+                        }
+                    }
+                }
+            }else{ //letras minusculas
+                const ascii = [lowerchars];
+                if(e_numero==='true'){ //letras minusculas e numeros
+                    const ascii = [lowerchars, numbers];
+                    if(e_simbolo==='true'){ //letras minusculas, numeros e simbolos
+                        const ascii = [lowerchars, numbers, especialchars];
+                        
+                        for(let i=0; i<tamanho; i++){
+                            let type = parseInt(Math.random() * ascii.length);
+
+                            if(type === 2){
+                                senha += String.fromCharCode(especialchars[parseInt(Math.random() * especialchars.length)]);
+                            }else{
+                                senha += String.fromCharCode(Math.floor(Math.random() * (ascii[type][1] - ascii[type][0])) + ascii[type][0]);
+                            }
+                        }
+                    }else{ //letras minusculas e numeros
+                        const ascii = [lowerchars, numbers];
+                        for(let i=0; i<tamanho; i++){        
+
+                            let type = parseInt(Math.random() * ascii.length);
+                        
+                            senha += String.fromCharCode(Math.floor(Math.random() * (ascii[type][1] - ascii[type][0])) + ascii[type][0]);
+                        }
+                    }
+                }else{ //letras minusculas e simbolos
+                    if(e_simbolo==='true'){
+                        const ascii = [lowerchars, especialchars];
+                            
+                        for(let i=0; i<tamanho; i++){
+                            let type = parseInt(Math.random() * ascii.length);
+
+                            if(type === 1){
+                                senha += String.fromCharCode(especialchars[parseInt(Math.random() * especialchars.length)]);
+                            }else{
+                                senha += String.fromCharCode(Math.floor(Math.random() * (ascii[type][1] - ascii[type][0])) + ascii[type][0]);
+                            }
+                        }
+                    }else{ //letras minusculas
+                        const ascii = [lowerchars];
+
+                        for(let i=0; i<tamanho; i++){
+                            let type = parseInt(Math.random() * ascii.length);
+                            senha += String.fromCharCode(Math.floor(Math.random() * (ascii[type][1] - ascii[type][0])) + ascii[type][0]);
+                        }
+                    }
+                }
             }
+    }else{
+        if(tamanho<=0){
+            senha = "TAMANHO MÍNIMO É 1, POR FAVOR, INFORME UM TAMANHO MAIOR";
+        }else{
+            senha = "TAMANHO MÁXIMO É 20, POR FAVOR, INFORME UM TAMANHO MENOR"
         }
-        
+    }
+
         senha = "Senha: " + senha;
 
         return senha;
