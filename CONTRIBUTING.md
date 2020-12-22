@@ -1,0 +1,1 @@
+Caso precise falar comigo, pode entrar em contato comigo pelo LinkedIn (link está disponível no meu perfil)

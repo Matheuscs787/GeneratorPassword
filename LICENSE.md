@@ -1,0 +1,1 @@
+Qualquer pessoa está autorizada usar a extensão desde que de os créditos da criação da extensão aos devidos desenvolvedores envolvidos.
