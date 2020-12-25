@@ -28,9 +28,15 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         }
 
-        document.querySelector("#senha_gerada").innerHTML = defineOpcoes(tamanho, e_maiuscula, e_numero, e_simbolo);
+        document.querySelector("#senha_gerada").value = defineOpcoes(tamanho, e_maiuscula, e_numero, e_simbolo);
 
     }   )
+
+    document.querySelector('#copiador').addEventListener('click', function(){
+        
+        document.getElementById("senha_gerada").select();
+        document.execCommand('copy');
+    } )
 
     function defineOpcoes(tamanho, e_maiuscula, e_numero, e_simbolo){
         
@@ -91,13 +97,11 @@ document.addEventListener('DOMContentLoaded', function(){
             }
     }else{
         if(tamanho<=0){
-            senha = "TAMANHO MÍNIMO É 1, POR FAVOR, INFORME UM TAMANHO MAIOR";
+            senha = "TAMANHO MÍNIMO É 1";
         }else{
-            senha = "TAMANHO MÁXIMO É 20, POR FAVOR, INFORME UM TAMANHO MENOR"
+            senha = "TAMANHO MÁXIMO É 20"
         }
     }
-        senha = "Senha: " + senha;
-
         return senha;
     }
 

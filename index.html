@@ -4,8 +4,11 @@
         <meta charset="utf-8"/>
         <title>Gerador de Senhas</title>
         <script src="gerador.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
     </head>
     <body>
+
+        <h1>Gerador de Senhas</h1>
 
         <p>Tamanho?</p>
         <input id="tamanho" type="text">
@@ -23,10 +26,15 @@
         <input type="radio" name="simbolo" value="false"> Não<br><br>
         
         <button id="btn">Gerar</button>
-        
-        <p><br></p>
 
-        <div id="senha_gerada">Senha: </div>        
+        <label><br><br></label>
+
+        <div id="divSenha">
+            <label class="senhaCampo">Senha: </label>
+            <input type="text" id="senha_gerada" value="" class="senhaCampo">
+            <label><br><br></label>
+            <button id="copiador">Copiar senha</button>
+        </div>        
 
     </body>
 </html>
