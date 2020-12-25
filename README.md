@@ -15,6 +15,7 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [ ] Criar uma logo para o projeto
+- [X] Melhorar o back-end criando uma função para gerar a senha
 - [ ] Melhorar o front-end do projeto
 - [ ] Criar opção de copiar a senha
 - [ ] Criar opção de salvar a senha na extensão
