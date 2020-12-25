@@ -31,7 +31,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Para instalar o <GeneratorPassword>, siga estas etapas:
 
-Opera GX:
+Opera GX e Google Chrome:
 
 * Baixe o projeto na sua máquina, abra o gerenciador de extensões, ative o Modo de desenvolvedor, clique em carregar sem compactação e escolha a pasta do projeto.
 
