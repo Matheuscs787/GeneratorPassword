@@ -19,6 +19,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Melhorar o front-end do projeto
 - [ ] Criar opção de copiar a senha
 - [ ] Criar opção de salvar a senha na extensão
+- [ ] Criar o tema escuro para a extensão
 
 ## 💻 Pré-requisitos
 
