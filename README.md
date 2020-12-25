@@ -16,10 +16,11 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [ ] Criar uma logo para o projeto
 - [X] Melhorar o back-end criando uma função para gerar a senha
+- [ ] Adicionar opção de copiar a senha
 - [ ] Melhorar o front-end do projeto
-- [ ] Criar opção de copiar a senha
-- [ ] Criar opção de salvar a senha na extensão
-- [ ] Criar o tema escuro para a extensão
+- [ ] Adicionar opção de ocultar a senha
+- [ ] Adicionar opção de salvar a senha na extensão
+- [ ] Adicionar o tema escuro para a extensão
 
 ## 💻 Pré-requisitos
 
