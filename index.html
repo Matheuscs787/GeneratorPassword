@@ -8,10 +8,10 @@
     </head>
     <body>
 
-        <h1>Gerador de Senhas</h1>
+        <h1 id="titulo">Gerador de Senhas</h1>
 
         <p>Tamanho?</p>
-        <input id="tamanho" type="text">
+        <input id="tamanho" type="text" autofocus>
 
         <p>Letras maiusculas?</p>
         <input type="radio" name="maiuscula" value="true" checked> Sim<br>
@@ -32,6 +32,7 @@
         <div id="divSenha">
             <label class="senhaCampo">Senha: </label>
             <input type="text" id="senha_gerada" value="" class="senhaCampo">
+            <button id="oculta" class="senhaCampo">Mostrar</button>
             <label><br><br></label>
             <button id="copiador">Copiar senha</button>
         </div>        

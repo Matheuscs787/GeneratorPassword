@@ -1,8 +1,18 @@
 body{
-    width: 250px;
+    width: 300px;
 }
 
 .senhaCampo{
     float: left;
     border: none;
+}
+
+#titulo{
+    text-align: center;
+}
+
+#oculta{
+    width: 70px;
+    height: 20px;
+    text-align: center;
 }

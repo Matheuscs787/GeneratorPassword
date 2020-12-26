@@ -6,7 +6,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/Matheuscs787/GeneratorPassword?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/Matheuscs787/GeneratorPassword?style=for-the-badge)
 
-<img src="icon.png" alt="Ícone provisório">
+<img src="128.png" alt="Ícone provisório">
 
 > Esse é um projeto de uma extensão para navegador (Testado no Opera GX e Google Chrome), onde é possível gerar senhas atráves da extensão.
 
@@ -16,9 +16,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [ ] Criar uma logo para o projeto
 - [X] Melhorar o back-end criando uma função para gerar a senha
-- [X] Adicionar opção de copiar a senha
+- [X] Adicionar opção de copiar a senha (Corrigir para copiar senha oculta)
 - [ ] Melhorar o front-end do projeto
-- [ ] Adicionar opção de ocultar a senha
+- [X] Adicionar opção de ocultar a senha 
 - [ ] Adicionar opção de salvar a senha na extensão
 - [ ] Adicionar o tema escuro para a extensão
 

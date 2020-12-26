@@ -33,9 +33,20 @@ document.addEventListener('DOMContentLoaded', function(){
     }   )
 
     document.querySelector('#copiador').addEventListener('click', function(){
-        
+
         document.getElementById("senha_gerada").select();
         document.execCommand('copy');
+    } )
+
+    document.querySelector('#oculta').addEventListener('click', function(){
+        
+        if(document.getElementById("senha_gerada").type === 'text'){
+            document.getElementById("senha_gerada").type = 'password';
+            //document.getElementById("senha_gerada").value = 'password';
+        }else{
+            document.getElementById("senha_gerada").type = 'text';
+        }
+        
     } )
 
     function defineOpcoes(tamanho, e_maiuscula, e_numero, e_simbolo){
