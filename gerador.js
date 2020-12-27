@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
     document.querySelector('#copiador').addEventListener('click', function(){
 
-        document.getElementById("senha_gerada").select();
-        document.execCommand('copy');
+        var senhaCopiada = document.getElementById("senha_gerada");
+        navigator.clipboard.writeText(senhaCopiada.value);
     } )
 
     document.querySelector('#oculta').addEventListener('click', function(){
