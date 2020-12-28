@@ -42,9 +42,10 @@ document.addEventListener('DOMContentLoaded', function(){
         
         if(document.getElementById("senha_gerada").type === 'text'){
             document.getElementById("senha_gerada").type = 'password';
-            //document.getElementById("senha_gerada").value = 'password';
+            document.getElementById("oculta").innerHTML = 'Mostrar';
         }else{
             document.getElementById("senha_gerada").type = 'text';
+            document.getElementById("oculta").innerHTML = 'Ocultar';
         }
         
     } )
