@@ -2,7 +2,24 @@ document.addEventListener('DOMContentLoaded', function(){
 
     document.querySelector('#btn').addEventListener('click',function(){
 
-        let tamanho = document.querySelector('#tamanho').value;
+        let tamanhoMin = 1;
+        let tamanhoMax = 20;
+
+        if(document.querySelector('#tamanhoMin').value === ''){
+            tamanhoMin = 1;
+        }else{
+            tamanhoMin = document.querySelector('#tamanhoMin').value;
+        }
+
+        if(document.querySelector('#tamanhoMax').value === ''){
+            tamanhoMax = 20;
+        }else{
+            tamanhoMax = document.querySelector('#tamanhoMax').value;
+        }
+
+        tamanhoMin = Math.ceil(tamanhoMin);
+
+        let tamanho = Math.floor(Math.random() * (tamanhoMax - tamanhoMin + 1) + tamanhoMin);
 
         var maiuscula = document.getElementsByName("maiuscula");
         var e_maiuscula = "";

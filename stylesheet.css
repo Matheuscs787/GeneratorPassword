@@ -7,6 +7,10 @@ body{
     border: none;
 }
 
+.tamanhoCampo{
+    float: left;
+}
+
 #titulo{
     text-align: center;
 }
@@ -15,4 +19,15 @@ body{
     width: 70px;
     height: 20px;
     text-align: center;
+}
+
+#tamanhoMin{
+    width: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#tamanhoMax{
+    width: 50px;
+    margin-left: 5px;
 }
