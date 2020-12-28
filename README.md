@@ -27,7 +27,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-* Utilizar Google Chrome ou Opera GX: `Pode funcionar em outros navegador, não foi testado>`
+* Utilizar Google Chrome ou Opera GX: `Pode funcionar em outros navegador, não foi testado`
 
 ## 🚀 Instalando <GeneratorPassword>
 
